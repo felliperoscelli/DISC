@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste DISC - Descubra seu Perfil Comportamental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Página Inicial -->
+        <div id="home-page" class="page active">
+            <div class="text-center">
+                <h1>Teste DISC</h1>
+                <p>Descubra seu perfil comportamental através do método DISC</p>
+                <button onclick="showPage('perfis-comportamentais')" class="btn-primary">Começar</button>
+            </div>
+        </div>
+
+        <!-- Página Perfis Comportamentais -->
+        <div id="perfis-comportamentais" class="page">
+            <h1>Perfis Comportamentais</h1>
+            <div class="content">
+                <p>O método DISC é uma ferramenta poderosa para entender os diferentes perfis comportamentais. Através dele, podemos identificar e compreender melhor as características predominantes de cada indivíduo, facilitando a comunicação e a colaboração.</p>
+                <button onclick="showPage('teste-disc')" class="btn-primary">Iniciar Teste DISC</button>
+                <h3>Conheça os Perfis DISC:</h3>
+                <div class="choice-container">
+                    <button onclick="showPage('perfil-dominante')" class="choice-button">Dominante</button>
+                    <button onclick="showPage('perfil-influente')" class="choice-button">Influente</button>
+                    <button onclick="showPage('perfil-estavel')" class="choice-button">Estável</button>
+                    <button onclick="showPage('perfil-conformidade')" class="choice-button">Conformidade</button>
+                </div>
+            </div>
+            <button onclick="showPage('home-page')" class="btn-back">Voltar</button>
+        </div>
+
+        <!-- Página do Teste DISC -->
+        <div id="teste-disc" class="page">
+            <div id="test-content">
+                <h1>Teste DISC</h1>
+                <p id="question-counter">Escolha apenas uma alternativa (Pergunta 1 de 26)</p>
+                <div id="question-container" class="choice-container">
+                    <!-- Perguntas serão inseridas aqui pelo JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Página de Resultados -->
+            <div id="results-content" style="display: none;">
+                <h1>Resultados</h1>
+                <h2 id="dominant-profile">Perfil Predominante: </h2>
+                <div id="chart-container">
+                    <!-- Gráfico será inserido aqui -->
+                </div>
+                <div class="content">
+                    <h3>Conheça os Perfis DISC:</h3>
+                    <div>
+                        <button onclick="showPage('perfil-dominante')">Dominante</button>
+                        <button onclick="showPage('perfil-influente')">Influente</button>
+                        <button onclick="showPage('perfil-estavel')">Estável</button>
+                        <button onclick="showPage('perfil-conformidade')">Conformidade</button>
+                    </div>
+                </div>
+            </div>
+            <button onclick="showPage('perfis-comportamentais')" class="btn-back">Voltar</button>
+        </div>
+
+        <!-- Página Perfil Dominante -->
+        <div id="perfil-dominante" class="page">
+            <h1>Perfil Dominante</h1>
+            <div class="content">
+                <h2>Como eles falam:</h2>
+                <ul>
+                    <li>Perguntando "O quê?"</li>
+                    <li>Mandar vs Pedir</li>
+                    <li>Falam mais do que escutam</li>
+                    <li>Vão direto ao ponto</li>
+                    <li>Podem ser agressivos ou rudes</li>
+                    <li>Falam depressa</li>
+                    <li>Tom autoritário de controle</li>
+                    <li>Usam frases curtas e acrônimos</li>
+                    <li>Iniciam com suas opiniões</li>
+                </ul>
+                
+                <h2>Como eles agem:</h2>
+                <ul>
+                    <li>Postura ereta</li>
+                    <li>Gestos firmes e decididos</li>
+                    <li>Contato visual direto</li>
+                    <li>Aperto de mão firme</li>
+                    <li>Caminham com passos largos</li>
+                    <li>Ocupam espaço</li>
+                    <li>Expressões faciais sérias</li>
+                </ul>
+                
+                <h2>Características:</h2>
+                <ul>
+                    <li><strong>Pontos Fortes:</strong> Liderança natural, tomada de decisão rápida, orientação para resultados, coragem para enfrentar desafios</li>
+                    <li><strong>Pontos de Atenção:</strong> Pode ser impaciente, autoritário, insensível aos sentimentos dos outros</li>
+                    <li><strong>Motivações:</strong> Desafios, autoridade, controle, resultados</li>
+                    <li><strong>Medos:</strong> Perder o controle, ser aproveitado pelos outros</li>
+                </ul>
+            </div>
+            <button onclick="showPage('perfis-comportamentais')" class="btn-back">Voltar</button>
+        </div>
+
+        <!-- Página Perfil Influente -->
+        <div id="perfil-influente" class="page">
+            <h1>Perfil Influente</h1>
+            <div class="content">
+                <h2>Como eles falam:</h2>
+                <ul>
+                    <li>Perguntando "Quem?"</li>
+                    <li>Falam com entusiasmo</li>
+                    <li>Contam histórias e anedotas</li>
+                    <li>Usam gestos expressivos</li>
+                    <li>Tom de voz variado e animado</li>
+                    <li>Gostam de ser o centro das atenções</li>
+                    <li>Falam sobre pessoas e relacionamentos</li>
+                </ul>
+                
+                <h2>Como eles agem:</h2>
+                <ul>
+                    <li>Gestos amplos e expressivos</li>
+                    <li>Sorriso frequente</li>
+                    <li>Contato visual caloroso</li>
+                    <li>Proximidade física</li>
+                    <li>Postura aberta e acolhedora</li>
+                    <li>Movimentos dinâmicos</li>
+                </ul>
+                
+                <h2>Características:</h2>
+                <ul>
+                    <li><strong>Pontos Fortes:</strong> Carisma, otimismo, habilidade de persuasão, networking natural</li>
+                    <li><strong>Pontos de Atenção:</strong> Pode ser desorganizado, falar demais, prometer mais do que consegue cumprir</li>
+                    <li><strong>Motivações:</strong> Reconhecimento, aprovação social, variedade, diversão</li>
+                    <li><strong>Medos:</strong> Rejeição, perder popularidade, trabalhar sozinho</li>
+                </ul>
+            </div>
+            <button onclick="showPage('perfis-comportamentais')" class="btn-back">Voltar</button>
+        </div>
+
+        <!-- Página Perfil Estável -->
+        <div id="perfil-estavel" class="page">
+            <h1>Perfil Estável</h1>
+            <div class="content">
+                <h2>Como eles falam:</h2>
+                <ul>
+                    <li>Perguntando "Como?"</li>
+                    <li>Tom de voz calmo e suave</li>
+                    <li>Falam devagar e pausadamente</li>
+                    <li>Escutam mais do que falam</li>
+                    <li>Evitam confrontos</li>
+                    <li>Usam linguagem diplomática</li>
+                    <li>Fazem perguntas para entender melhor</li>
+                </ul>
+                
+                <h2>Como eles agem:</h2>
+                <ul>
+                    <li>Postura relaxada</li>
+                    <li>Gestos suaves e controlados</li>
+                    <li>Contato visual gentil</li>
+                    <li>Movimentos lentos e deliberados</li>
+                    <li>Expressão facial calma</li>
+                    <li>Proximidade respeitosa</li>
+                </ul>
+                
+                <h2>Características:</h2>
+                <ul>
+                    <li><strong>Pontos Fortes:</strong> Paciência, lealdade, trabalho em equipe, estabilidade emocional</li>
+                    <li><strong>Pontos de Atenção:</strong> Pode ser resistente a mudanças, indeciso, evitar conflitos necessários</li>
+                    <li><strong>Motivações:</strong> Segurança, harmonia, relacionamentos estáveis, rotina</li>
+                    <li><strong>Medos:</strong> Mudanças súbitas, conflitos, perder segurança</li>
+                </ul>
+            </div>
+            <button onclick="showPage('perfis-comportamentais')" class="btn-back">Voltar</button>
+        </div>
+
+        <!-- Página Perfil Conformidade -->
+        <div id="perfil-conformidade" class="page">
+            <h1>Perfil Conformidade</h1>
+            <div class="content">
+                <h2>Como eles falam:</h2>
+                <ul>
+                    <li>Perguntando "Por quê?"</li>
+                    <li>Falam com precisão e detalhes</li>
+                    <li>Usam dados e fatos</li>
+                    <li>Tom de voz controlado</li>
+                    <li>Evitam generalizações</li>
+                    <li>Fazem perguntas técnicas</li>
+                    <li>Falam sobre processos e procedimentos</li>
+                </ul>
+                
+                <h2>Como eles agem:</h2>
+                <ul>
+                    <li>Postura formal e controlada</li>
+                    <li>Gestos precisos e medidos</li>
+                    <li>Contato visual direto mas reservado</li>
+                    <li>Movimentos calculados</li>
+                    <li>Expressão facial séria</li>
+                    <li>Mantém distância apropriada</li>
+                </ul>
+                
+                <h2>Características:</h2>
+                <ul>
+                    <li><strong>Pontos Fortes:</strong> Precisão, qualidade, análise crítica, organização</li>
+                    <li><strong>Pontos de Atenção:</strong> Pode ser perfeccionista demais, crítico, lento na tomada de decisões</li>
+                    <li><strong>Motivações:</strong> Qualidade, precisão, padrões elevados, conhecimento</li>
+                    <li><strong>Medos:</strong> Cometer erros, críticas ao seu trabalho, padrões baixos</li>
+                </ul>
+            </div>
+            <button onclick="showPage('perfis-comportamentais')" class="btn-back">Voltar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
