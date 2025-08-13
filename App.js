@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
 import PerfisComportamentais from './PerfisComportamentais';
 import PerfilDominante from './PerfilDominante';
 import PerfilInfluente from './PerfilInfluente';
@@ -11,7 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<PerfisComportamentais />} />
+        <Route path="/" element={<Home />} />
         <Route path="/perfis-comportamentais" element={<PerfisComportamentais />} />
         <Route path="/perfil-dominante" element={<PerfilDominante />} />
         <Route path="/perfil-influente" element={<PerfilInfluente />} />
