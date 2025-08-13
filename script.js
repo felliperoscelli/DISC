@@ -1,7 +1,7 @@
 // Perguntas do teste DISC
 const questions = [
     { question: "1- Determinado", choices: [1], labels: ["Determinado"] },
-    { question: "2- Confiável", choices: [2], labels: ["Confiável"] },
+    { question: "2- Confiante", choices: [2], labels: ["Confiante"] },
     { question: "3- Consistente", choices: [3], labels: ["Consistente"] },
     { question: "4- Preciso", choices: [4], labels: ["Preciso"] },
     { question: "1- Apressado", choices: [1], labels: ["Apressado"] },
@@ -86,7 +86,7 @@ const questions = [
     { question: "4- Convencional", choices: [4], labels: ["Convencional"] },
     { question: "1- Ambicioso", choices: [1], labels: ["Ambicioso"] },
     { question: "2- Radiante", choices: [2], labels: ["Radiante"] },
-    { question: "3- Regulador", choices: [3], labels: ["Regulador"] },
+    { question: "3- Regulado", choices: [3], labels: ["Regulado"] },
     { question: "4- Calculista", choices: [4], labels: ["Calculista"] },
     { question: "1- Inquisitivo", choices: [1], labels: ["Inquisitivo"] },
     { question: "2- Oferecido", choices: [2], labels: ["Oferecido"] },
